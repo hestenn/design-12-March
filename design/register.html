@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Дверной Мастер</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Логотип Дверной Мастер">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Регистрация</h1>
+        <form id="registerForm">
+            <label>Фамилия: <input type="text" required></label>
+            <label>Имя: <input type="text" required></label>
+            <label>Отчество: <input type="text"></label>
+            <label>Номер телефона: <input type="text" required></label>
+            <label>Эл. почта: <input type="email" required></label>
+            <label>Пароль: <input type="password" required></label>
+            <label>Повтор пароля: <input type="password" required></label>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Дверной Мастер. Все права защищены(Реально).</p>
+    </footer>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

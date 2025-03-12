@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Дверной Мастер</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Логотип Дверной Мастер">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Авторизация</h1>
+        <form id="loginForm">
+            <label>Эл. почта: <input type="email" required></label>
+            <label>Пароль: <input type="password" required></label>
+            <button type="submit">Войти</button>
+        </form>
+        <p class="register-link">Ещё не зарегистрированы? <a href="register.html">Зарегистрироваться</a></p>
+    </main>
+    <footer>
+        <p>© 2025 Дверной Мастер. Все права защищены(Реально).</p>
+    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'profile.html';
+        });
+    </script>
+</body>
+</html>

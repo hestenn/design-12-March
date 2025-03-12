@@ -1,0 +1,30 @@
+.search-sort {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.product img {
+    height: 60%;
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
